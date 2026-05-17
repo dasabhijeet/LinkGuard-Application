@@ -4,6 +4,8 @@ Self-hosted URL threat intelligence API. Math-based scoring engine with AI-power
 
 Future goal is to host AI locally and use this application instead of sending data to third party servers.
 
+This project was inspired from my earlier cybersecurity backend demo project: https://github.com/dasabhijeet/Signal-Transfer-Pipeline
+
 ## What it does
 
 Scans URLs through six independent scorers, then sends the result to an LLM (via OpenRouter/free tier) for a plain English security summary.
@@ -104,3 +106,29 @@ linkguard/
 ├── requirements.txt
 └── README.md
 ```
+
+## Screenshots
+
+### 1. Server start
+
+<img width="930" height="360" alt="Screenshot 2026-05-17 202317" src="https://github.com/user-attachments/assets/172dd3f0-f918-421c-8a4a-c70b8aa9ca99" />
+
+### 2. /scan endpoint
+
+<img width="1450" height="443" alt="Screenshot 2026-05-17 201527" src="https://github.com/user-attachments/assets/492ed8fa-41f7-4e5e-9b54-3a581895bf3b" />
+
+### 3. /health endpoint
+
+<img width="1457" height="432" alt="Screenshot 2026-05-17 201654" src="https://github.com/user-attachments/assets/4972ff72-4bf2-47bc-be5d-11e2349c8d88" />
+
+### 4. /history?url=.... endpoint
+
+<img width="1458" height="412" alt="Screenshot 2026-05-17 201726" src="https://github.com/user-attachments/assets/3918d797-0e29-4614-b3c0-a2236e4fe80d" />
+
+### 5. /stats endpoint
+
+<img width="1457" height="422" alt="Screenshot 2026-05-17 201838" src="https://github.com/user-attachments/assets/21665d0e-4e91-4268-a187-87a9a138faba" />
+
+### 6. /metrics endpoint
+
+<img width="1433" height="455" alt="Screenshot 2026-05-17 201948" src="https://github.com/user-attachments/assets/5dfe718e-2fdc-46a7-8283-aa6c818a710a" />
