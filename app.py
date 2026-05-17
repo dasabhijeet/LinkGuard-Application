@@ -53,7 +53,7 @@ def require_api_key(x_api_key: str):
 # Scores are summed, clamped to 0 minimum, then risk tier is assigned.
 # AI/LLM summary is generated last from the full result.
 
-def run_pipeline(url: str) -> dict:
+async def run_pipeline(url: str) -> dict:
     breakdown = []
 
     # Math and logic based scorers
@@ -88,7 +88,7 @@ def run_pipeline(url: str) -> dict:
     }
 
     # AI/LLM summary
-    result["ai_summary"] = generate_summary(result)
+    result["ai_summary"] = await generate_summary(result)
 
     return result
 
@@ -102,7 +102,7 @@ async def scan_url(request: dict, x_api_key: str = Header(...)):
         raise HTTPException(status_code=400, detail="Missing 'url' in request body.")
     if len(url) > 2048:
         raise HTTPException(status_code=400, detail="URL too long.")
-    result = run_pipeline(url)
+    result = await run_pipeline(url)
     save_scan(result)
     return result
 
