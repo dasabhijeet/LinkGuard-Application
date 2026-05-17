@@ -1,0 +1,22 @@
+info:
+  name: History API
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/history?url=https://secure-nt.tkmm/paypool
+  headers:
+    - name: x-api-key
+      value: linkguard-secret-key
+  params:
+    - name: url
+      value: https://secure-nt.tkmm/paypool
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: Scan API
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/scan
+  headers:
+    - name: x-api-key
+      value: linkguard-secret-key
+  body:
+    type: json
+    data: |-
+      {
+        "url": "https://google.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

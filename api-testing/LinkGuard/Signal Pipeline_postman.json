@@ -1,0 +1,202 @@
+{
+  "version": "1",
+  "name": "Signal Pipeline",
+  "items": [
+    {
+      "name": "Health API",
+      "type": "http",
+      "seq": 1,
+      "tags": [],
+      "request": {
+        "method": "get",
+        "url": "",
+        "params": [],
+        "headers": [],
+        "auth": {
+          "mode": "none"
+        },
+        "body": {
+          "mode": "none"
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": ""
+      },
+      "settings": {},
+      "filename": "Health API.yml",
+      "pathname": "c:/Users/User/Desktop/Academics-&-Career/Coding/Repositories (Laptop)/LinkGuard/api-testing/LinkGuard/Health API.yml",
+      "draft": null,
+      "partial": true,
+      "loading": false,
+      "size": 0.00018596649169921875,
+      "depth": 1
+    },
+    {
+      "name": "History API",
+      "type": "http",
+      "seq": 1,
+      "tags": [],
+      "request": {
+        "method": "get",
+        "url": "",
+        "params": [],
+        "headers": [],
+        "auth": {
+          "mode": "none"
+        },
+        "body": {
+          "mode": "none"
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": ""
+      },
+      "settings": {},
+      "filename": "History API.yml",
+      "pathname": "c:/Users/User/Desktop/Academics-&-Career/Coding/Repositories (Laptop)/LinkGuard/api-testing/LinkGuard/History API.yml",
+      "draft": null,
+      "partial": true,
+      "loading": false,
+      "size": 0.000377655029296875,
+      "depth": 1
+    },
+    {
+      "name": "Metrics API",
+      "type": "http",
+      "seq": 1,
+      "tags": [],
+      "request": {
+        "method": "get",
+        "url": "",
+        "params": [],
+        "headers": [],
+        "auth": {
+          "mode": "none"
+        },
+        "body": {
+          "mode": "none"
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": ""
+      },
+      "settings": {},
+      "filename": "Metrics API.yml",
+      "pathname": "c:/Users/User/Desktop/Academics-&-Career/Coding/Repositories (Laptop)/LinkGuard/api-testing/LinkGuard/Metrics API.yml",
+      "draft": null,
+      "partial": true,
+      "loading": false,
+      "size": 0.00025177001953125,
+      "depth": 1
+    },
+    {
+      "name": "Scan API",
+      "type": "http",
+      "seq": 1,
+      "tags": [],
+      "request": {
+        "method": "post",
+        "url": "",
+        "params": [],
+        "headers": [],
+        "auth": {
+          "mode": "none"
+        },
+        "body": {
+          "mode": "none"
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": ""
+      },
+      "settings": {},
+      "filename": "Scan API.yml",
+      "pathname": "c:/Users/User/Desktop/Academics-&-Career/Coding/Repositories (Laptop)/LinkGuard/api-testing/LinkGuard/Scan API.yml",
+      "draft": null,
+      "partial": true,
+      "loading": false,
+      "size": 0.000339508056640625,
+      "depth": 1
+    },
+    {
+      "name": "Stats API",
+      "type": "http",
+      "seq": 1,
+      "tags": [],
+      "request": {
+        "method": "get",
+        "url": "",
+        "params": [],
+        "headers": [],
+        "auth": {
+          "mode": "none"
+        },
+        "body": {
+          "mode": "none"
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": ""
+      },
+      "settings": {},
+      "filename": "Stats API.yml",
+      "pathname": "c:/Users/User/Desktop/Academics-&-Career/Coding/Repositories (Laptop)/LinkGuard/api-testing/LinkGuard/Stats API.yml",
+      "draft": null,
+      "partial": true,
+      "loading": false,
+      "size": 0.00025653839111328125,
+      "depth": 1
+    }
+  ],
+  "environments": [],
+  "runtimeVariables": {},
+  "brunoConfig": {
+    "opencollection": "1.0.0",
+    "name": "Signal Pipeline",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "proxy": {
+      "inherit": true,
+      "config": {
+        "protocol": "http",
+        "hostname": "",
+        "port": "",
+        "auth": {
+          "username": "",
+          "password": ""
+        },
+        "bypassProxy": ""
+      }
+    }
+  },
+  "securityConfig": {},
+  "settingsSelectedTab": "overview",
+  "folderLevelSettingsSelectedTab": {},
+  "allTags": [],
+  "format": "yml",
+  "importedAt": 1779029465919,
+  "lastAction": null,
+  "root": {
+    "meta": null,
+    "request": null,
+    "docs": null
+  },
+  "isLoading": false,
+  "globalEnvironmentVariables": {},
+  "globalEnvSecrets": [],
+  "exportedAt": "2026-05-17T14:51:07.046Z",
+  "exportedUsing": "Bruno VS Code Extension"
+}
