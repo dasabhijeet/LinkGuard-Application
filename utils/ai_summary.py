@@ -31,7 +31,7 @@ def _build_prompt(result: dict) -> str:
         f"Write a brief security summary from a cybersecurity analyst point of view."
     )
 
-def generate_summary(result: dict) -> str:
+async def generate_summary(result: dict) -> str:
     if not OPENROUTER_API_KEY:
         return _fallback(result)
 
@@ -51,8 +51,9 @@ def generate_summary(result: dict) -> str:
             "HTTP-Referer":  "https://github.com/dasabhijeet",
         }
 
-        resp = httpx.post(OPENROUTER_URL, json=payload, headers=headers, timeout=15)
-        resp.raise_for_status()
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(OPENROUTER_URL, json=payload, headers=headers, timeout=15)
+            resp.raise_for_status()
 
         print("LLM API CALLED!")
 
