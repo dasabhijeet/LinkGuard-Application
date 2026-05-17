@@ -109,9 +109,13 @@ linkguard/
 
 ## Screenshots
 
-### 1. Server start
+### 1.1. Server start
 
 <img width="930" height="360" alt="Screenshot 2026-05-17 202317" src="https://github.com/user-attachments/assets/172dd3f0-f918-421c-8a4a-c70b8aa9ca99" />
+
+### 1.2. FastAPI Swagger docs
+
+<img width="1877" height="922" alt="image" src="https://github.com/user-attachments/assets/ac4f3f33-0a10-4cfc-b4b9-0bdad1e20a94" />
 
 ### 2. /scan endpoint
 
